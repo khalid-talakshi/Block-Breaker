@@ -14,7 +14,7 @@ private LevelManager levelmanager;
 	void OnTriggerEnter2D (Collider2D trigger) {
 			
 		print("Trigger");
-		levelmanager.LoadLevel("Win Screen");
+		levelmanager.LoadLevel("Lose Screen");
 		
 		
 	}
