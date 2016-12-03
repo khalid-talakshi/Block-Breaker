@@ -6,12 +6,9 @@ public class Brick : MonoBehaviour {
 	public int maxHits;
 	
 	private int timesHit;
-	private LevelManager levelmanager; 
 	
 	// Use this for initialization
 	void Start () {
-	
-		levelmanager = GameObject.FindObjectOfType<LevelManager>();
 		
 		timesHit = 0;
 	
@@ -27,6 +24,7 @@ public class Brick : MonoBehaviour {
 	
 	void OnCollisionEnter2D (Collision2D collision) {
 		
+<<<<<<< HEAD
 		maxHits --;
 		
 		if (maxHits == 3) {
@@ -55,6 +53,9 @@ public class Brick : MonoBehaviour {
 		
 		levelmanager.loadNextLevel();
 		
+=======
+		timesHit ++;
+>>>>>>> parent of df2b183... Added Destroy Mechanics
 		
 	}
 }
